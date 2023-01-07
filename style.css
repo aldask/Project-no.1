@@ -63,8 +63,8 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background-color: black;
-    box-shadow: 0 5px 10px black;
+    background-color: rgb(38, 38, 38);
+    box-shadow: 0px 6px 19px rgb(38, 38, 38);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -74,6 +74,7 @@ header {
 header .n_logo {
     height: auto;
     width: auto;
+    margin-left: 10px;
     max-height: 50px;
     max-width: 250px;
 }
@@ -87,21 +88,23 @@ header .navbar ul li {
 header .navbar ul li a {
     display: block;
     padding: 20px;
+    text-decoration: none;
+    color: grey;
 }
 header .navbar ul li a:hover {
-    background: green;
-    color: black;
+    background: grey;
+    color: white;
 }
 header .navbar ul li ul {
     position: absolute;
     left:0;
     width: 200px;
-    background-color: wheat;
+    background-color: white;
+    color: black;
     display: none;
 }
 header .navbar ul li ul li {
    width:100%;
-   border-top: 1px solid black;
 }
 header .navbar ul li:hover > ul {
     display: initial;
