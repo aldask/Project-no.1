@@ -109,3 +109,8 @@ header .navbar ul li ul li {
 header .navbar ul li:hover > ul {
     display: initial;
 }
+.socialmedia {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
