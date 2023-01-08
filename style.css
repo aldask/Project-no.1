@@ -29,6 +29,7 @@ h1{
     color: black;
     padding: 8px;
     font-size: 15px;
+    align-items: center;
 }
 .side1 {
     width: 100%;
@@ -53,6 +54,7 @@ h1{
     color: white;
     padding: 8px;
     font-size: 15px;
+    align-items: center;
 }
 footer {
     color: black;
@@ -143,6 +145,8 @@ footer > p {
     .side1 {
         width: 50%;
         height: 50%;
+        justify-content: center;
+        align-items: center;
     }
     .side2 img {
         padding: 0;
