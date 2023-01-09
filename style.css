@@ -31,6 +31,19 @@ h1{
     font-size: 15px;
     align-items: center;
 }
+.box3 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 68px;
+    background-color: white;
+    color: black;
+    padding: 8px;
+    font-size: 15px;
+    align-items: left;
+}
+.box3 > h1 {
+    text-align: center;
+}
 .side1 {
     width: 100%;
     height: 100%;
@@ -58,6 +71,24 @@ h1{
 }
 footer {
     color: black;
+}
+.blogpic {
+    padding: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+h2 {
+    font-size: 14px;
+    text-align: center;
+    justify-content: center;
+}
+.blogs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
 }
 
 header {
@@ -176,5 +207,18 @@ footer > p {
         margin-left: 25px;
         width: 50%;
         height: 50%;
+    }
+    .box3 {
+        display: flex;
+        flex-direction: row;
+        margin-top: 68px;
+        background-color: white;
+        color: black;
+        padding: 8px;
+        font-size: 15px;
+        align-items: left;
+    }
+    .box3 > h1 {
+        text-align: center;
     }
   }
