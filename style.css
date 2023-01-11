@@ -258,6 +258,9 @@ footer {
         justify-content: space-between;
         margin-left: 40px;
         margin-right: 40px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
     }
     .first > a {
         justify-content: left;
