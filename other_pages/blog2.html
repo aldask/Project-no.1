@@ -8,7 +8,7 @@
 
     <title>Document</title>
 </head>
-<body>
+<body onload="paintPoo()">
 
     <div class = "container">
         <header>
@@ -25,9 +25,33 @@
                 </ul>
             </div>
         </header>
-        <div class = "box3" id = "forJS">
-            <button onclick="showText()">show smth</button>
-            <p id = "magicBox">NICeee</p>
+        <div class = "box1">
+            <div class = "side1">
+                <button onclick="showText()">Click to see text</button></br></br>
+                <p id = "magicBox">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, quis.</p>
+            </div>
+            <div class = "side2">
+                <button></button>
+                <table id="table">
+                    <tr>
+                        <td>Row1</td>
+                        <td>Row1</td>
+                    </tr>
+                    <tr>
+                        <td>Row2</td>
+                        <td>Row2</td>
+                    </tr>
+                </table>
+                <br>
+                    <button type="button" onclick="addRow()">Click to add row at the bottom of table</button>
+            </div>
+        </div>
+        <div class = "box3">
+            <div class = "side1">
+                <p class = "f3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, assumenda eveniet.</p>
+                <p class = "f3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, dolore. Velit!</p>
+                <p class = "f3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, unde fuga!</p>
+            </div>
         </div>
         <footer>
             <div class = "first">
