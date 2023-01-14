@@ -38,5 +38,3 @@ function getRandomColor() {
         text[i].style.color = getRandomColor();
     }
   }
-
-  paintPoo();
