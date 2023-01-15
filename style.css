@@ -282,21 +282,6 @@ table, td {
     background: rgb(0 0 0 / 0.4);
   }
   
-  
-  .button {
-    border: 0;
-    cursor: pointer;
-    background: var(--gray-8);
-    color: var(--gray-2);
-    font-weight: 700;
-    padding: var(--size-2) var(--size-4);
-  }
-  
-  .button:hover,
-  .button:focus {
-    background: var(--cyan-9);
-  }
-
 @media only screen and (min-width: 600px) {
     body {
         max-width: 100vw;
