@@ -4,11 +4,26 @@ document.getElementById("year").textContent = currentYear;
 
 //canvas script
 let canvas = document.querySelector("canvas");
-let context = canvas.getContext("2d");
+let context = canvas?.getContext("2d");
+
+if (context != null){
 context.fillStyle = "blue";
 context.fillRect(5, 16, 184, 59);
+}
 
 //function no. 1 (show text by a click)
+const modal = document.querySelector("#modal");
+const openModal = document.querySelector(".open-button");
+const closeModal = document.querySelector(".close-button");
+
+openModal.addEventListener("click", () => {
+  modal.showModal();
+  console.log("poop");
+});
+
+closeModal.addEventListener("click", () => {
+  modal.close();
+});
 function showText() { 
     document.getElementById("magicBox").style.display = "block"; 
 }
@@ -16,11 +31,19 @@ function showText() {
 //Function no. 2 (add new row to the list)
 function addRow() {
     var tableRow = document.getElementById("table");
-    var row = tableRow.insertRow(2);
-    var cell1 = row.insertCell(0);
-    var cell2 = row.insertCell(1);
-     cell1.innerHTML = "New";
-     cell2.innerHTML = "New";
+    var rowCount = document.getElementById('table').rows.length;
+    console.log(rowCount);
+
+    if(rowCount < 10){
+      var row = tableRow.insertRow(2);
+      var cell1 = row.insertCell(0);
+      var cell2 = row.insertCell(1);
+      cell1.innerHTML = "New";
+      cell2.innerHTML = "New";
+    } else return console.log("No can do brotha");
+  }
+  function myDeleteFunction() {
+      document.getElementById("table").deleteRow(2);
     }
 //Function no. 3 (random effects after refresh)
 function getRandomColor() {
